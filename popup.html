@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link href="https://cdn.bootcdn.net/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet">
+	<title>奈飞免费cookies</title>
+
+	<style>
+		html,
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		header {
+			text-align: center;
+			font-weight: bold;
+			font-size: 18px;
+			background: #f9f9f9;
+			border-bottom: 1px #ccc solid;
+			padding: 10px;
+			width: 100%;
+		}
+
+		.main {
+			padding: 10px 10px 20px 10px;
+		}
+
+		.box {
+			padding: 10px 0;
+			/*text-align: center;*/
+		}
+
+		footer {
+			width: 100%;
+			height: 30px;
+			padding: 10px 10px 20px 10px;
+			background: #f9f9f9;
+		}
+
+		footer .title {
+			font-weight: bold;
+			font-size: 18px;
+			padding-bottom: 5px;
+		}
+
+		footer li {
+			float: left;
+			list-style: none;
+			margin-right: 10px;
+		}
+		.main{
+			font-size: 14px;
+		}
+		.button:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		}
+
+		#token {
+			outline: none;
+			padding: 10px;
+			font-size: 14px;
+			width: 150px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body style="min-width:300px;min-height:100px;">
+
+	<header>嗨奈飞-免费Cookies</header>
+
+	<div class="main">
+		<p>使用说明：</p>
+		<p>1.cookie后台动态自动更新（每小时更新一次），如果暂时不可用，可稍后再试。<br>
+			2.后台自动分配cookie如遇观看人数过多，请重复点击几次"免费观看"，如果重复多次依旧无法观看，可能当前观看人数太多，账号不够用。<br>
+			3.如遇插件不可使用，请下载最新版本<br>
+		<p style="color: #f00;">4.本插件会隐藏Netflix右上角用户下拉菜单,删除本插件即可正常显示。</p><br>
+		</p>
+
+		<div class="box">
+			<p>
+				<input id="token" class="input" type="text" placeholder="请先免费领取激活码">
+				<button id="tg" class="button login is-primary is-small">领取激活码</button>
+				<button click="showQrcode()" class="button login is-primary is-small">领取激活码</button>
+			</p>
+			<button id="open" class="button is-info is-small">免费观看</button>
+			<button id="out" class="button is-danger is-small">退出登录</button>
+		</div>
+	</div>
+
+	<footer>
+		<div class="title">特别鸣谢</div>
+		<li><a id="hinaifei" href="https://hinaifei.com">嗨奈飞</a></li>
+		<li><a id="pp" href="https://ppis.me">PPis.me</a></li>
+		<li><a id="db" href="https://t.me/hinaifei">嗨奈飞电报群</a></li>
+	</footer>
+	<div class="modal">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+		  <!-- Any other Bulma elements you want -->
+		</div>
+		<button class="modal-close is-large" aria-label="close"></button>
+	  </div>
+	<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.js"></script>
+	<script type="text/javascript" src="js/jquery-1.2.4.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/inject.js"></script>
+	<script>
+		function showQrcode(){
+		layer.msg('hello'); 
+		}
+	</script>
+</body>
+
+</html>

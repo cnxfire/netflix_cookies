@@ -1,0 +1,77 @@
+.chrome-plugin-demo-panel {
+    z-index: 99999;
+	position: fixed;
+	right: 0;
+	top: 200px;
+    border: solid 3px #dcdcdc;
+    border-style: none none none solid;
+    background-color: rgba(51, 51, 51, 0.6);
+	padding: 5px;
+    color: white;
+}
+.chrome-plugin-demo-panel a{
+	color: white;
+	font-size: 14px;
+    display: block;
+    padding: 2px;
+}
+.chrome-plugin-demo-panel a:hover{
+    text-decoration: underline;
+    color: #ffee08;
+}
+.chrome-plugin-simple-tip {
+    position: fixed;
+    left: 20px;
+    padding: 16px 10px;
+    top: 30px;
+    color: white;
+    min-width: 150px;
+	max-width: 700px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    background: #70a800;
+    background-image: linear-gradient(to bottom, #95cc2a, #70a800);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+	transition: top .4s;
+}
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}
+
+.account-dropdown-button {
+    display: none;
+}

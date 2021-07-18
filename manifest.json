@@ -1,0 +1,48 @@
+{
+	"manifest_version": 2,
+	"name": "嗨奈飞免费cookies",
+	"version": "1.0",
+	"description": "一键免费看奈飞，cookies动态更新。",
+	"author": "xpp",
+	"homepage_url": "https://www.hinaifei.com",
+	"background": {
+		"scripts": [
+			"js/background.js"
+		],
+		"persistent": true
+	},
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"permissions": [
+		"cookies",
+		"webRequest",
+		"activeTab",
+		"webRequestBlocking",
+		"https://api.hinaifei.com/*",
+		"https://api.hinaifei.cn/*",
+		"https://www.netflix.com/*",
+		"https://cdn.bootcdn.net/*"
+	],
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts":
+	[
+		{
+			"matches": ["https://www.netflix.com/*"],
+			"js": ["js/content-script.js"],
+			"css": ["css/custom.css"],
+			"run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": 
+	[
+		"js/inject.js"
+	],
+	"content_security_policy": "script-src 'self' 'sha256-yTElpWVztFcuRtOuRISLrFoNp91ZYrGfN8eNcRlCBAw=' https://cdn.bootcdn.net; object-src 'self'"
+}
