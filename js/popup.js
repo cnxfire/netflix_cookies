@@ -7,7 +7,7 @@
       return false
     }
 
-    $.get('https://api.hinaifei.cn/getCookies?token' + token, function (res) {
+    $.get('https://api.hinaifei.cn/getCookies?token=' + token, function (res) {
       if (res.code !== 0) {
         alert(res.msg)
         return false
@@ -18,7 +18,7 @@
   })
 
   $('#tg').click(() => {
-    chrome.tabs.create({ url: 'https://t.me/hinaifei' })
+    chrome.tabs.create({ url: 'https://ppis.me/netflix-cookies-share.html' })
   })
 
   $('#out').click(() => {

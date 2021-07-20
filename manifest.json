@@ -36,7 +36,7 @@
 		{
 			"matches": ["https://www.netflix.com/*"],
 			"js": ["js/content-script.js"],
-			"css": ["css/custom.css"],
+			"css": ["css/custom.css","css/bulma.min.css"],
 			"run_at": "document_start"
 		}
 	],

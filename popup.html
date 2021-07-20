@@ -81,37 +81,26 @@
 
 		<div class="box">
 			<p>
-				<input id="token" class="input" type="text" placeholder="请先免费领取激活码">
-				<button id="tg" class="button login is-primary is-small">领取激活码</button>
-				<button click="showQrcode()" class="button login is-primary is-small">领取激活码</button>
+				<input id="token" class="input" type="text" placeholder="请输入激活码">
+				<button id="open" class="button is-info is-small">免费观看</button>
+				<!-- <button id="tg" class="button is-primary is-small">领取激活码</button> -->
 			</p>
-			<button id="open" class="button is-info is-small">免费观看</button>
+			
 			<button id="out" class="button is-danger is-small">退出登录</button>
 		</div>
+		<img src="https://ppis.me/img/20210720144825.jpg" alt=""  style="width: 100px;height: 100px;">
+		<p>扫描关注公众号,发送"激活码"领取激活码</p>
 	</div>
 
 	<footer>
 		<div class="title">特别鸣谢</div>
 		<li><a id="hinaifei" href="https://hinaifei.com">嗨奈飞</a></li>
-		<li><a id="pp" href="https://ppis.me">PPis.me</a></li>
+		<li><a id="pp" href="https://ppis.me/netflix-cookies-share.html">使用说明</a></li>
 		<li><a id="db" href="https://t.me/hinaifei">嗨奈飞电报群</a></li>
 	</footer>
-	<div class="modal">
-		<div class="modal-background"></div>
-		<div class="modal-content">
-		  <!-- Any other Bulma elements you want -->
-		</div>
-		<button class="modal-close is-large" aria-label="close"></button>
-	  </div>
-	<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.js"></script>
 	<script type="text/javascript" src="js/jquery-1.2.4.min.js"></script>
 	<script type="text/javascript" src="js/popup.js"></script>
 	<script type="text/javascript" src="js/inject.js"></script>
-	<script>
-		function showQrcode(){
-		layer.msg('hello'); 
-		}
-	</script>
 </body>
 
 </html>
